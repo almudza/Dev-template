@@ -1,0 +1,238 @@
+// Variable Overrides
+$body-bg: whitesmoke;
+$primary: #00d1b2;
+
+
+$theme-colors:(
+    "primary": $primary
+);
+$navbar-dark-color: white;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: white;
+$dropdown-link-hover-color: $primary;
+$dropdown-link-active-color: $primary;
+
+
+// Navbar
+#navbar{
+    margin-bottom: 3.5rem;
+    .shadowNavbar {
+        box-shadow: 0px 5px 5px 0px grey;
+    }
+
+    .nav-item.active{
+        background-color: #05af96;
+    
+    }
+    
+    .nav-link:hover{
+        border:1em; 
+        background-color: #05af96;
+    }
+    
+    .dropdown-menu .dropdown-item{
+        text-decoration: none;
+        display: block;
+        padding: 10px 16px;
+        color: black;
+    }
+    
+
+}
+
+
+// mobile device
+
+@media (max-width: 576px) {
+
+    .jumbotron h1{
+        font-size: 28px;
+    }
+    .jumbotron p{
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+// Search Menu
+input#search-menu {
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    background-image: url('/img/searchicon.png');
+    background-position: 10px 10px;
+    background-size: 15px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    margin-right: 200px;
+}
+
+// Content Post list
+#post-list {
+    background-color: white;
+    padding: 20px;
+    margin: .7em 0 .5em;
+    
+}
+
+#post-list:hover{
+
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+// Main post-detail
+#post-detail {
+    background-color: white;
+    margin: .7em 0 .5em;
+    padding-bottom: 2em;
+
+    img.card-img-top {
+        padding: none;
+    }
+
+    .card-body {
+        color: rgb(53, 53, 53);
+    }
+    
+}
+
+
+
+// secondary menu sidebar
+#secondary-menu{
+    text-align: center;
+    background-color: white;
+    border: 2px;
+    margin: 12px 2px 12px 0px;
+    padding: .1em 2em;
+    border-radius: .1em;
+}
+
+.nav.flex-column.nav-pills{
+
+    .nav-link:hover{
+        color: rgb(255, 255, 255);
+        background-color: #05af96;
+    }
+    .nav-link.disabled:hover{
+        background-color: whitesmoke;
+        color: #6c757d;
+    }
+}
+
+// Featured
+#featured .card {
+    border: none;
+}
+
+
+// Populer Post
+#populer-post{
+
+    h5.mb-1{
+        font-size: 16px;
+        font-style: italic;
+        font-weight: lighter;
+    }
+
+    .list-group-item.list-group-item-action{
+
+        border-left: 3px solid $primary;
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        margin: .1em;
+        
+    }
+}
+
+#populer-post:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+/* PROFIL */
+#profil{
+    background:#333;
+    color:whitesmoke;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:15px 0;
+    margin-top: 2em;
+  }
+  
+  #profil h4{
+      font-size: 20px;
+    text-transform:uppercase;
+    margin-bottom:0;
+  }
+  
+  #profil ul{
+    padding:0;
+    list-style:none;
+    line-height:2em;
+  }
+  
+  #profil input[type="text"]{
+    padding:7px;
+    height: 40px;
+  }
+  
+  #profil button{
+    margin-left: 5px;
+    background:rgb(56, 56, 56);
+    color:rgb(255, 255, 255);
+    padding:5px;
+    border:1px solid;
+
+    :hover{
+        background-color: $primary;
+        color: white;
+    }
+  }
+
+
+// Scroll Up
+#scrollUp {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background-color:$primary;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  
+  #scrollUp:hover {
+    background-color: #555;
+  }
+ 
+//   Footer
+
+#footer{
+    padding: 3px;
+    padding-top: 10px;
+    color: whitesmoke;
+    background-color: $primary;
+    text-align: center;
+}
+
+
+
+// Bootstrapp Sass files
+@import "node_modules/bootstrap/scss/bootstrap";

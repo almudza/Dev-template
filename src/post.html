@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Devmus Site</title>
+  </head>
+  <body>
+    
+    <!-- section navbar -->
+    <section id="navbar">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a href="/" class="navbar-brand">DEVMUS</a>
+          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a href="/" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">Android</a>
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">Custom</a>
+                  <a href="" class="dropdown-item">Root</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a href="post.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <form action="">
+                <input id="search-menu" type="text" placeholder="Search.." name="search">
+              </form>
+              <li class="nav-item dropdown">
+                <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" >Join</a>
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">Login</a>
+                  <a href="" class="dropdown-item">Register</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="" class="dropdown-item">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </nav> 
+    </section>
+    <!-- EndNavbar -->
+    
+    <!-- Jumbotron -->
+    <!-- <section id="jumbotron">
+      <div class="jumbotron jumbotron-fluid p-3 p-md-5 text-white bg-dark">
+        <div class="container">    
+          <div class="px-0 text-center">
+            <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
+            <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
+            <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- EndJumbotron -->
+    
+    <!-- Content -->
+    <div class="container"> 
+
+      <section id="content">
+        <div class="row mt-sm-4 mt-md-0">
+          <!--  main content  -->
+          <div class="col-sm-12 col-md-8 text-md-left">
+            <div id="post-detail">
+                <img src="./img/kaya-hazal-image.jpg" width="100%" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h3>An important heading</h3>
+                    <small>by <i class="fa fa-user"></i> <a href="#">Mudza</a> </small>
+                    <small class="pull-right"><i class="fa fa-heart"></i> 3 Likes</small>
+                    <p class="lead">A sort of importand subheading can go here.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Minus voluptates laboriosam tempore nemo deleniti accusamus nisi illum quaerat culpa voluptatem 
+                    aut repellendus consectetur eaque, magnam nam iusto eos ea ut.</p>
+                    <a id="tag" href="#"><small class="pull-left badge badge-outline-primary">#Laravel</small></a>
+                    <a id="kategori" href="#"><small class="pull-right badge badge-outline-primary"><i class="fa fa-tag"></i> PHP</small></a>
+                </div>
+            </div>
+          </div>
+          <!-- endcontent -->
+
+          <!-- sidebar -->
+          <div class="col-sm-12 col-md-4">
+              <h3 id="secondary-menu" class="mb4">Kategori</h3>
+
+              <ul class="nav flex-column nav-pills">
+                <li class="nav-item">
+                  <a href="" class="nav-link active">Active</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link disabled">Disiabled</a>
+                </li>
+              </ul>
+              <h3 id="secondary-menu" class="mb4">Populer</h3>
+
+              <div id="populer-post" class="list-group">
+                <a href="" class="list-group-item list-group-item-action flex-column align-items-starts">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List item heading And the begining is sample</h5>
+                  </div>
+                  <small class="pull-right">3 days ago</small>
+                </a>
+              </div>
+              <div id="populer-post" class="list-group">
+                <a href="" class="list-group-item list-group-item-action flex-column align-items-starts">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">List item heading And the begining is sample</h5>
+                  </div>
+                  <small class="pull-right">3 days ago</small>
+                </a>
+              </div>
+          </div>
+          <!-- endsidebar -->
+        </div>
+      </section>
+
+    </div> 
+    <!-- container -->
+
+    <section id="profil">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h4>Contact Us</h4>
+              <ul>
+                <li><i class="fa fa-phone"></i> (617) 555-5555</li>
+                <li><i class="fa fa-envelope"></i> support@apptheme.test</li>
+                <li><i class="fa fa-map"></i> 400 Main st, Boston MA</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+              <h4>Newsletter</h4>
+              <p>Lorem ipsum dolor sit amet</p>
+              <form>
+                <input type="text" name="email" placeholder="Enter Email">
+                <button class="btn btn-outline-primary" type="submit" name="button">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ScrollUP -->
+    <button id="scrollUp">UP</button>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+
+
+      <!-- footer -->
+    <footer id="footer">
+      <p>Devmus, Copyright &copy; 2018</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+    <!-- Navbar Shadow -->
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop()>100){
+            $("nav.navbar").addClass("shadowNavbar");
+          } else if ($(this).scrollTop() == 0) {
+            $("nav.navbar").removeClass("shadowNavbar");
+          } else {
+            return false;
+          }
+        });
+      });
+    </script>
+
+
+  <!-- Scroll Up jQuery -->
+    <script>
+      $(document).ready(function(){
+
+        // Chek jika di scroll ke atas, muncul dan sembunyi
+        $(window).scroll(function(){
+          if ($(this).scrollTop() >100){
+            $('#scrollUp').fadeIn();
+          } else {
+            $('#scrollUp').fadeOut();
+          }
+        });
+
+        // Click ke atas dengan animasi scroll Up
+        $("#scrollUp").click(function(){
+          $("html, body").animate({scrollTop : 0},800);
+          return false;
+        });
+      });
+    </script>
+
+
+
+  <!-- Javascript scrollup -->
+  <!-- <script>
+    // ketika user scroll kebawah 20px dari atas document, show top up
+    window.onscroll = function(){scrollFunction()};
+
+    function scrollFunction(){
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
+        document.getElementById("scrollUp").style.display = "block";
+      } else {
+        document.getElementById("scrollUp").style.display = "none";
+      }
+    }
+
+    // Ketika user clik topup, scroll ke atas document
+    function topFunction(){
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  </script> -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  </body>
+</html>
